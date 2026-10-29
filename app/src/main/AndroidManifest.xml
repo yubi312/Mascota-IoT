@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AndroidManifest.xml — MascotaIoT -->
+<!-- Permisos de red requeridos para Firebase y comunicación WiFi con ESP32 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permiso para acceso a Internet (Firebase Realtime Database) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Permiso de estado de red (verificar conectividad antes de comunicarse con ESP32) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permiso WiFi para comunicación directa con ESP32 (futuro) -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:name=".MascotaIoTApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_mascota"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_mascota"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MascotaIoT"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- Pantalla 1: Login (Launcher) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pantalla 2: Crear Cuenta -->
+        <activity
+            android:name=".CrearCuentaActivity"
+            android:exported="false" />
+
+        <!-- Pantalla 3: Menú -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+
+        <!-- Pantalla 4: Manipular Circuito -->
+        <activity
+            android:name=".ManipularCircuitoActivity"
+            android:exported="false" />
+
+        <!-- Pantalla 5: Ver Acciones -->
+        <activity
+            android:name=".VerAccionesActivity"
+            android:exported="false" />
+
+        <!-- Pantalla 6: Estadísticas -->
+        <activity
+            android:name=".EstadisticasActivity"
+            android:exported="false" />
+
+        <!-- Pantalla 7: Ver Perfil -->
+        <activity
+            android:name=".VerPerfilActivity"
+            android:exported="false" />
+
+    </application>
+</manifest>

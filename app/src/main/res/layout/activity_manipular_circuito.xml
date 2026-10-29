@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =====================================================
+     PANTALLA 4: MANIPULAR CIRCUITO — MascotaIoT
+     Botones circulares Verde (Activar) / Rojo (Desactivar)
+     Indicador de estado en tiempo real con íconos vectoriales
+     ===================================================== -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradiente_principal">
+
+    <!-- ===== HEADER ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="130dp"
+        android:background="@drawable/bg_header_ambar"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/tvNombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_usuario_placeholder"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/fondo_oscuro"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_manipular"
+            android:textSize="12sp"
+            android:textColor="@color/fondo_oscuro"
+            android:letterSpacing="0.15"
+            android:layout_marginTop="4dp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <!-- ===== INDICADOR DE ESTADO EN TIEMPO REAL ===== -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        android:importantForAccessibility="no"
+        app:cardBackgroundColor="@color/card_fondo"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        tools:ignore="VisualLintBounds">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Indicador LED -->
+            <View
+                android:id="@+id/viewLed"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/bg_led_inactivo"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/estado_circuito"
+                    android:textSize="12sp"
+                    android:textColor="@color/blanco_70"
+                    android:letterSpacing="0.1" />
+
+                <TextView
+                    android:id="@+id/tvEstadoCircuito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sin_conexion"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blanco" />
+            </LinearLayout>
+
+            <!-- Ícono vectorial sensor -->
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_sensor"
+                app:tint="@color/ambar_primario"
+                android:contentDescription="@string/estado_circuito" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ===== BOTONES CIRCULARES ACTIVAR / DESACTIVAR ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="24dp">
+
+        <!-- Botón ACTIVAR -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnActivar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:backgroundTint="@color/verde_activo"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                app:cornerRadius="70dp"
+                android:text="@string/activar"
+                android:gravity="center"
+                app:icon="@drawable/ic_door_open"
+                app:iconSize="36dp"
+                app:iconTint="@color/blanco"
+                app:iconGravity="textTop"
+                app:strokeColor="@color/verde_claro"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abrir_compuerta"
+                android:textSize="12sp"
+                android:textColor="@color/verde_claro"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Divisor vertical -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_separador" />
+
+        <!-- Botón DESACTIVAR -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDesactivar"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:backgroundTint="@color/rojo_accion"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                app:cornerRadius="70dp"
+                android:text="@string/desactivar"
+                android:gravity="center"
+                app:icon="@drawable/ic_door_closed"
+                app:iconSize="36dp"
+                app:iconTint="@color/blanco"
+                app:iconGravity="textTop"
+                app:strokeColor="#EF9A9A"
+                app:strokeWidth="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cerrar_compuerta"
+                android:textSize="12sp"
+                android:textColor="#EF9A9A"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ===== FOOTER ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="28dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:minWidth="220dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/card_fondo"
+            android:textColor="@color/ambar_primario"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/volver"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconTint="@color/ambar_primario"
+            app:iconGravity="textStart"
+            app:cornerRadius="14dp"
+            app:strokeColor="@color/ambar_primario"
+            app:strokeWidth="1.5dp"
+            tools:ignore="VisualLintButtonBounds" />
+    </LinearLayout>
+
+</LinearLayout>

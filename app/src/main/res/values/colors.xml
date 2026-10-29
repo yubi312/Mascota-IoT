@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta principal: Smart Home + Mascotas -->
+    <color name="fondo_oscuro">#0D1B2A</color>        <!-- Azul noche profundo -->
+    <color name="fondo_medio">#1B2A3B</color>          <!-- Azul acero medio -->
+    <color name="ambar_primario">#FFA000</color>        <!-- Ámbar cálido (mascotas) -->
+    <color name="ambar_claro">#FFD54F</color>           <!-- Ámbar claro -->
+    <color name="ambar_oscuro">#E65100</color>          <!-- Naranja quemado -->
+    <color name="rojo_accion">#C62828</color>           <!-- Rojo acción/alerta -->
+    <color name="verde_activo">#2E7D32</color>          <!-- Verde circuito activo -->
+    <color name="verde_claro">#A5D6A7</color>           <!-- Verde claro indicador -->
+    <color name="blanco">#FFFFFF</color>
+    <color name="blanco_70">#B3FFFFFF</color>           <!-- Blanco 70% transparente -->
+    <color name="blanco_20">#33FFFFFF</color>           <!-- Blanco 20% (card overlay) -->
+    <color name="negro">#000000</color>
+    <color name="texto_secundario">#90CAF9</color>       <!-- Azul claro para subtítulos -->
+    <color name="card_fondo">#1E2D3D</color>            <!-- Fondo de cards oscuras -->
+    <color name="card_borde">#FFA000</color>            <!-- Borde ámbar en cards -->
+    <color name="gris_input">#263545</color>            <!-- Fondo de inputs -->
+    <color name="separador">#2C3E50</color>
+</resources>

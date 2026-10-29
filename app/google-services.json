@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "459633224724",
+    "firebase_url": "https://fir-mascotasiot-default-rtdb.firebaseio.com",
+    "project_id": "fir-mascotasiot",
+    "storage_bucket": "fir-mascotasiot.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459633224724:android:7c638e210a07ad5dc1cb01",
+        "android_client_info": {
+          "package_name": "com.example.mascotaiot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW5qqL0qbLS70pJwMRdu_tEDP6nI6jqPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

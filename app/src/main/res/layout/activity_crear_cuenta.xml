@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =====================================================
+     PANTALLA 2: CREAR CUENTA — MascotaIoT
+     Fondo oscuro con header ámbar curvo
+     ===================================================== -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradiente_principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ===== HEADER CON GRADIENTE ÁMBAR ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="140dp"
+            android:background="@drawable/bg_header_ambar"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="18dp"
+            android:paddingHorizontal="20dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_person_add"
+                app:tint="@color/fondo_oscuro"
+                android:contentDescription="@string/titulo_crear_cuenta" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_crear_cuenta"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/fondo_oscuro"
+                android:letterSpacing="0.1"
+                android:layout_marginTop="6dp"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulo_crear_cuenta"
+                android:textSize="12sp"
+                android:textColor="@color/fondo_oscuro"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <!-- ===== FORMULARIO ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="32dp">
+
+            <!-- Campo RUT -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rut"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="#263545"
+                app:boxStrokeColor="@color/ambar_primario"
+                app:hintTextColor="@color/ambar_claro"
+                app:startIconDrawable="@drawable/ic_badge"
+                app:startIconTint="@color/ambar_primario"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Fila Nombre + Apellido -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/nombre"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="#263545"
+                    app:boxStrokeColor="@color/ambar_primario"
+                    app:hintTextColor="@color/ambar_claro"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/ambar_primario"
+                    android:layout_marginEnd="6dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blanco"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/apellido"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="#263545"
+                    app:boxStrokeColor="@color/ambar_primario"
+                    app:hintTextColor="@color/ambar_claro"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/ambar_primario"
+                    android:layout_marginStart="6dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blanco"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Correo Electrónico -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo_electronico"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="#263545"
+                app:boxStrokeColor="@color/ambar_primario"
+                app:hintTextColor="@color/ambar_claro"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/ambar_primario"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Cargo (dropdown) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cargo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                app:boxBackgroundColor="#263545"
+                app:boxStrokeColor="@color/ambar_primario"
+                app:hintTextColor="@color/ambar_claro"
+                app:startIconDrawable="@drawable/ic_work"
+                app:startIconTint="@color/ambar_primario"
+                android:layout_marginBottom="12dp">
+                <AutoCompleteTextView
+                    android:id="@+id/spinnerCargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:inputType="none"
+                    android:padding="16dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Contraseña -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrasena"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="#263545"
+                app:boxStrokeColor="@color/ambar_primario"
+                app:hintTextColor="@color/ambar_claro"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/ambar_primario"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/ambar_primario"
+                android:layout_marginBottom="12dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Repetir Contraseña -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/repetir_contrasena"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundColor="#263545"
+                app:boxStrokeColor="@color/ambar_primario"
+                app:hintTextColor="@color/ambar_claro"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:startIconTint="@color/ambar_primario"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/ambar_primario"
+                android:layout_marginBottom="24dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRepetirContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Botones Registrar + Volver con íconos vectoriales -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:maxWidth="320dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/ambar_primario"
+                android:textColor="@color/fondo_oscuro"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/btn_registrar"
+                app:icon="@drawable/ic_check"
+                app:iconTint="@color/fondo_oscuro"
+                app:iconGravity="textStart"
+                app:cornerRadius="14dp"
+                android:layout_marginBottom="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnVolver"
+                android:layout_width="match_parent"
+                android:maxWidth="320dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/card_fondo"
+                android:textColor="@color/ambar_primario"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="@string/btn_volver_simple"
+                app:icon="@drawable/ic_arrow_back"
+                app:iconTint="@color/ambar_primario"
+                app:iconGravity="textStart"
+                app:cornerRadius="14dp"
+                app:strokeColor="@color/ambar_primario"
+                app:strokeWidth="1.5dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/ambar_primario"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

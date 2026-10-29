@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =====================================================
+     PANTALLA 3: MENÚ — MascotaIoT
+     Header ámbar curvo | Botones de menú con íconos vectoriales
+     ===================================================== -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradiente_principal">
+
+    <!-- ===== HEADER ÁMBAR CON USUARIO ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="160dp"
+        android:background="@drawable/bg_header_ambar"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/ic_logo_mascota"
+            app:tint="@color/fondo_oscuro"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tvNombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_usuario_placeholder"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/fondo_oscuro"
+            android:layout_marginTop="6dp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bienvenido"
+            android:textSize="12sp"
+            android:textColor="@color/fondo_oscuro"
+            android:layout_marginTop="2dp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <!-- ===== ETIQUETA DE SECCIÓN ===== -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel_control"
+        android:textSize="12sp"
+        android:textColor="@color/ambar_primario"
+        android:letterSpacing="0.2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp" />
+
+    <!-- ===== BOTONES DE MENÚ ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="20dp">
+
+        <!-- Manipular Circuito -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManipularCircuito"
+            style="@style/BotonMenu"
+            android:maxWidth="320dp"
+            android:layout_gravity="center_horizontal"
+            app:icon="@drawable/ic_power"
+            app:iconTint="@color/ambar_primario"
+            app:iconGravity="textStart"
+            android:text="@string/manipular_circuito" />
+
+        <!-- Ver Acciones -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerAcciones"
+            style="@style/BotonMenu"
+            android:maxWidth="320dp"
+            android:layout_gravity="center_horizontal"
+            app:icon="@drawable/ic_history"
+            app:iconTint="@color/ambar_primario"
+            app:iconGravity="textStart"
+            android:text="@string/ver_acciones_realizadas" />
+
+        <!-- Ver Estadísticas -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerEstadisticas"
+            style="@style/BotonMenu"
+            android:maxWidth="320dp"
+            android:layout_gravity="center_horizontal"
+            app:icon="@drawable/ic_analytics"
+            app:iconTint="@color/ambar_primario"
+            app:iconGravity="textStart"
+            android:text="@string/ver_estadisticas" />
+
+        <!-- Ver Perfil -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerPerfil"
+            style="@style/BotonMenu"
+            android:maxWidth="320dp"
+            android:layout_gravity="center_horizontal"
+            app:icon="@drawable/ic_account"
+            app:iconTint="@color/ambar_primario"
+            app:iconGravity="textStart"
+            android:text="@string/ver_perfil" />
+
+    </LinearLayout>
+
+    <!-- ===== FOOTER: CERRAR SESIÓN ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="32dp">
+
+        <!-- Separador -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/bg_separador"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:maxWidth="320dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="52dp"
+            android:backgroundTint="@color/rojo_accion"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/cerrar_sesion"
+            app:icon="@drawable/ic_logout"
+            app:iconTint="@color/blanco"
+            app:iconGravity="textStart"
+            app:cornerRadius="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

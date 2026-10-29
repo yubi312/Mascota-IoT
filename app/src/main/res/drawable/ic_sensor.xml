@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Sensor radar IoT -->
+    <path
+        android:fillColor="@color/ambar_primario"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12c0,3.69 2.47,6.86 6,8.25v-2.18C5.64,16.89 4,14.65 4,12c0,-4.42 3.58,-8 8,-8s8,3.58 8,8c0,2.65 -1.64,4.89 -4,6.07v2.18c3.53,-1.39 6,-4.56 6,-8.25c0,-5.52 -4.48,-10 -10,-10zm0,4c-3.31,0 -6,2.69 -6,6c0,2.22 1.21,4.15 3,5.19v-2.28C8.38,14.15 8,13.13 8,12c0,-2.21 1.79,-4 4,-4s4,1.79 4,4c0,1.13 -0.38,2.15 -1,2.91v2.28c1.79,-1.04 3,-2.97 3,-5.19c0,-3.31 -2.69,-6 -6,-6zm0,5c-0.55,0 -1,0.45 -1,1c0,0.55 0.45,1 1,1s1,-0.45 1,-1c0,-0.55 -0.45,-1 -1,-1z" />
+</vector>

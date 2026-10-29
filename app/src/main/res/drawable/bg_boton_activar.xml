@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fondo circular para botón Activar (verde) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <gradient
+        android:angle="135"
+        android:startColor="#1B5E20"
+        android:centerColor="#2E7D32"
+        android:endColor="#43A047"
+        android:type="linear" />
+    <stroke android:color="#A5D6A7" android:width="2dp" />
+</shape>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema principal oscuro con acento ámbar -->
+    <style name="Theme.MascotaIoT" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ambar_primario</item>
+        <item name="colorPrimaryDark">@color/fondo_oscuro</item>
+        <item name="colorAccent">@color/ambar_primario</item>
+        <item name="android:windowBackground">@color/fondo_oscuro</item>
+        <item name="android:statusBarColor">@color/fondo_oscuro</item>
+        <item name="android:navigationBarColor">@color/fondo_oscuro</item>
+        <item name="android:textColorHint">@color/blanco_70</item>
+    </style>
+
+    <!-- Botón ámbar principal (acción positiva) -->
+    <style name="BotonAmbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/ambar_primario</item>
+        <item name="android:textColor">@color/fondo_oscuro</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Botón rojo (acción negativa / cerrar sesión) -->
+    <style name="BotonRojo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/rojo_accion</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Botón outline (secundario / volver) -->
+    <style name="BotonOutline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/fondo_oscuro</item>
+        <item name="android:textColor">@color/ambar_primario</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="strokeColor">@color/ambar_primario</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Botón menú: grande, con ícono, ámbar -->
+    <style name="BotonMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:backgroundTint">@color/card_fondo</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="strokeColor">@color/ambar_primario</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="iconGravity">start</item>
+        <item name="iconPadding">12dp</item>
+        <item name="iconTint">@color/ambar_primario</item>
+    </style>
+
+    <!-- Título de sección en pantallas internas -->
+    <style name="TituloSeccion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+</resources>

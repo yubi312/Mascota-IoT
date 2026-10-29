@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MascotaIoT</string>
+
+    <!-- ===== Login ===== -->
+    <string name="rut">RUT</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="btn_crear_cuenta">Crear Cuenta</string>
+    <string name="login_card_titulo">INICIAR SESIÓN</string>
+    <string name="login_subtitulo">Control inteligente para tu mascota</string>
+    <string name="separador_o">o</string>
+    <string name="cargando">Cargando…</string>
+
+    <!-- ===== Crear Cuenta ===== -->
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="cargo">Cargo</string>
+    <string name="repetir_contrasena">Repetir Contraseña</string>
+    <string name="registrar">Registrar</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_volver_simple">Volver</string>
+    <string name="titulo_crear_cuenta">NUEVA CUENTA</string>
+    <string name="subtitulo_crear_cuenta">Registra tu acceso al sistema</string>
+
+    <!-- ===== Menú ===== -->
+    <string name="bienvenido">Bienvenido al sistema</string>
+    <string name="panel_control">PANEL DE CONTROL</string>
+    <string name="manipular_circuito">Manipular Circuito</string>
+    <string name="ver_acciones_realizadas">Ver Acciones Realizadas</string>
+    <string name="ver_estadisticas">Ver Estadísticas</string>
+    <string name="ver_perfil">Ver Perfil</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+
+    <!-- ===== Manipular Circuito ===== -->
+    <string name="titulo_manipular">MANIPULAR CIRCUITO</string>
+    <string name="estado_circuito">Estado del circuito</string>
+    <string name="sin_conexion">Sin conexión</string>
+    <string name="activar">ACTIVAR</string>
+    <string name="desactivar">DESACTIVAR</string>
+    <string name="abrir_compuerta">Abrir compuerta</string>
+    <string name="cerrar_compuerta">Cerrar compuerta</string>
+
+    <!-- ===== Ver Acciones ===== -->
+    <string name="titulo_acciones">HISTORIAL DE ACCIONES</string>
+    <string name="titulo_historial_acciones">HISTORIAL DE ACCIONES</string>
+    <string name="label_usuario_caps">USUARIO</string>
+    <string name="label_distancia_caps">DISTANCIA</string>
+    <string name="separador_punto">·</string>
+    <string name="fecha_ejemplo">01 01 2025</string>
+    <string name="hora_ejemplo">00:00:00</string>
+    <string name="accion_ejemplo">Obstáculo Detectado</string>
+    <string name="rut_ejemplo">11.111.111-1</string>
+    <string name="distancia_ejemplo">30 cm</string>
+
+    <!-- ===== Estadísticas ===== -->
+    <string name="titulo_estadisticas">ESTADÍSTICAS</string>
+    <string name="titulo_estadisticas_completo">ESTADÍSTICAS</string>
+    <string name="label_activaciones">Activaciones</string>
+    <string name="label_desactivaciones">Desactivaciones</string>
+    <string name="label_obstaculos">Obstáculos\nDetectados</string>
+    <string name="label_distancia_total">Distancia Total</string>
+    <string name="valor_inicial_numero">0</string>
+    <string name="valor_inicial_distancia">0 cm</string>
+    <string name="sensor_titulo">Sensor de distancia activo</string>
+    <string name="sensor_detalle">ESP32 · HC-SR04 · Sistema Local IoT</string>
+    <string name="desc_card_activaciones">Tarjeta de activaciones</string>
+    <string name="desc_card_desactivaciones">Tarjeta de desactivaciones</string>
+    <string name="desc_card_obstaculos">Tarjeta de obstáculos detectados</string>
+    <string name="desc_card_distancia">Tarjeta de distancia total</string>
+    <string name="desc_card_sensor">Estado del sensor ESP32</string>
+
+    <!-- ===== Ver Perfil ===== -->
+    <string name="titulo_perfil">VER PERFIL</string>
+    <string name="label_rut">RUT</string>
+    <string name="label_nombre">NOMBRE</string>
+    <string name="label_apellido">APELLIDO</string>
+    <string name="label_correo">CORREO</string>
+    <string name="label_cargo">CARGO</string>
+    <string name="label_contrasena">CONTRASEÑA</string>
+    <string name="contrasena_oculta">••••••••</string>
+    <string name="valor_vacio">—</string>
+
+    <!-- ===== Comunes ===== -->
+    <string name="volver">Volver al Menú</string>
+    <string name="nombre_usuario_placeholder">Nombre Usuario</string>
+    <string name="esp32_footer">ESP32 · Smart Access · IoT</string>
+</resources>

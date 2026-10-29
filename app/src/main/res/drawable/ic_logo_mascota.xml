@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Escudo / Puerta inteligente -->
+    <path
+        android:fillColor="@color/ambar_primario"
+        android:pathData="M12,1L3,5v6c0,5.55 3.84,10.74 9,12c5.16,-1.26 9,-6.45 9,-12V5L12,1zm0,2.18l7,3.12v4.7c0,4.64 -3.14,8.96 -7,10.08c-3.86,-1.12 -7,-5.44 -7,-10.08V6.3l7,-3.12z" />
+    <!-- Huella de pata estilizada al centro -->
+    <path
+        android:fillColor="@color/ambar_primario"
+        android:pathData="M12,11.5c-1.38,0 -2.5,1.12 -2.5,2.5c0,1.38 1.12,2.5 2.5,2.5s2.5,-1.12 2.5,-2.5c0,-1.38 -1.12,-2.5 -2.5,-2.5zm-3.5,-1c-0.83,0 -1.5,0.67 -1.5,1.5s0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5s-0.67,-1.5 -1.5,-1.5zm7,0c-0.83,0 -1.5,0.67 -1.5,1.5s0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5s-0.67,-1.5 -1.5,-1.5zm-5,-2.5c-0.83,0 -1.5,0.67 -1.5,1.5s0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5s-0.67,-1.5 -1.5,-1.5zm3,0c-0.83,0 -1.5,0.67 -1.5,1.5s0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5s-0.67,-1.5 -1.5,-1.5z" />
+</vector>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =====================================================
+     PANTALLA 1: LOGIN — MascotaIoT
+     Fondo: gradiente azul noche | Tarjeta central ámbar
+     ===================================================== -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradiente_principal"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="28dp">
+
+        <!-- ===== HERO SECTION ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="56dp"
+            android:paddingBottom="32dp">
+
+            <!-- Logo profesional mascota / smart gate -->
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/ic_logo_mascota"
+                android:contentDescription="@string/app_name" />
+
+            <!-- Nombre de la app -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="@color/ambar_primario"
+                android:letterSpacing="0.05"
+                android:layout_marginTop="12dp" />
+
+            <!-- Subtítulo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_subtitulo"
+                android:textSize="13sp"
+                android:textColor="@color/blanco_70"
+                android:letterSpacing="0.03"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- ===== CARD DE LOGIN ===== -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            app:cardBackgroundColor="@color/card_fondo"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="16dp"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <!-- Título sección -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_card_titulo"
+                    android:textSize="13sp"
+                    android:textColor="@color/ambar_primario"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.15"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Campo RUT con ícono -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/rut"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="#263545"
+                    app:boxStrokeColor="@color/ambar_primario"
+                    app:hintTextColor="@color/ambar_claro"
+                    app:startIconDrawable="@drawable/ic_badge"
+                    app:startIconTint="@color/ambar_primario"
+                    android:layout_marginBottom="14dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etRut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blanco"
+                        android:inputType="text"
+                        android:imeOptions="actionNext" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Campo Contraseña -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contrasena"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="#263545"
+                    app:boxStrokeColor="@color/ambar_primario"
+                    app:hintTextColor="@color/ambar_claro"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/ambar_primario"
+                    app:startIconDrawable="@drawable/ic_lock"
+                    app:startIconTint="@color/ambar_primario"
+                    android:layout_marginBottom="24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blanco"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionDone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Botón Iniciar Sesión con ícono vectorial -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnIniciarSesion"
+                    android:layout_width="match_parent"
+                    android:maxWidth="320dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="56dp"
+                    android:backgroundTint="@color/ambar_primario"
+                    android:textColor="@color/fondo_oscuro"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:letterSpacing="0.05"
+                    android:text="@string/btn_iniciar_sesion"
+                    app:icon="@drawable/ic_login"
+                    app:iconTint="@color/fondo_oscuro"
+                    app:iconGravity="textStart"
+                    app:cornerRadius="14dp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Separador -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginVertical="6dp">
+                    <View android:layout_width="0dp" android:layout_height="1dp"
+                        android:layout_weight="1" android:background="#33FFFFFF"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/separador_o" android:textColor="@color/blanco_70" android:textSize="12sp"
+                        android:layout_marginHorizontal="10dp"/>
+                    <View android:layout_width="0dp" android:layout_height="1dp"
+                        android:layout_weight="1" android:background="#33FFFFFF"/>
+                </LinearLayout>
+
+                <!-- Botón Crear Cuenta con ícono vectorial -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCrearCuenta"
+                    android:layout_width="match_parent"
+                    android:maxWidth="320dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="52dp"
+                    android:backgroundTint="@color/card_fondo"
+                    android:textColor="@color/ambar_primario"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="@string/btn_crear_cuenta"
+                    app:icon="@drawable/ic_person_add"
+                    app:iconTint="@color/ambar_primario"
+                    app:iconGravity="textStart"
+                    app:cornerRadius="14dp"
+                    app:strokeColor="@color/ambar_primario"
+                    app:strokeWidth="1.5dp" />
+
+                <!-- Progress -->
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/ambar_primario"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/esp32_footer"
+            android:textSize="12sp"
+            android:textColor="@color/blanco_70"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
